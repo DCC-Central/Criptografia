@@ -1,3 +1,6 @@
+#Programa: cesar.py
+#Descrição: Codifica e decodifica uma mensagem de acordo com a cifra de rotação de César.
+
 def codificar(texto, rot):
     alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
