@@ -46,7 +46,7 @@ def algoritmo_euclidiano_estendido(a, b, c):
 #	print("y =", c1*beta, "- k *",a1 )
 	return(c1*alpha)
 	
-def gera_chave(a, b, a1, b1, t):
+def gera_chave(a, b, a1, b1):
 	m = a*b -1
 	e = a1*m + a
 	d = b1*m + b
