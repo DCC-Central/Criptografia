@@ -12,6 +12,7 @@ def codificar(texto, rot):
             if posicao >= 26:
                 posicao -= 26
             codificado += alfabeto[posicao]
+
         else:
             codificado += letra
 
@@ -25,10 +26,15 @@ def decodificar(texto, rot):
     for letra in texto.lower():
         if letra in alfabeto:
             posicao = alfabeto.index(letra) - rot
-            if posicao >= 26:
-                posicao -= 26
+            if posicao < 0:
+                posicao += 26
             decodificado += alfabeto[posicao]
         else:
             decodificado += letra
 
     return decodificado
+
+#original = input("Digite o texto criptografado: ")
+#codificado = codificar(original, 13)
+#decodificado = decodificar(codificado, 13)
+#print("Codificado: " + codificado + "\nDecofidicado: " + decodificado )
